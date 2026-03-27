@@ -1,0 +1,133 @@
+/* =============================================
+   RESET & BASE
+   Remove default browser styles, set a nice font
+   ============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding won't push elements out of place */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1a1a2e;   /* dark navy background */
+  color: #ffffff;
+  min-height: 100vh;     /* full screen height */
+
+  /* center everything on the page */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =============================================
+   CARD
+   The white box that holds everything
+   ============================================= */
+.card {
+  background: #16213e;       /* slightly lighter than the background */
+  border-radius: 20px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 420px;          /* never gets wider than 420px */
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* =============================================
+   TITLE
+   ============================================= */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  color: #e0e0ff;
+}
+
+/* =============================================
+   SEARCH BOX
+   Input and button sit side by side using flexbox
+   ============================================= */
+.search-box {
+  display: flex;
+  gap: 10px;              /* space between input and button */
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;                /* input grows to fill available space */
+  padding: 12px 16px;
+  border: 2px solid #0f3460;
+  border-radius: 10px;
+  background: #0f3460;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;          /* remove the default blue border on focus */
+}
+
+/* change border color when user clicks into the input */
+.search-box input:focus {
+  border-color: #e94560;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  background: #e94560;    /* red/pink accent color */
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;        /* hand cursor on hover */
+  transition: background 0.2s;
+}
+
+.search-box button:hover {
+  background: #c73652;    /* slightly darker on hover */
+}
+
+/* =============================================
+   ERROR MESSAGE
+   ============================================= */
+.error {
+  color: #e94560;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+/* =============================================
+   WEATHER RESULT CARD
+   ============================================= */
+.result {
+  background: #0f3460;
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 10px;
+}
+
+.result h2 {            /* city name */
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  color: #e0e0ff;
+}
+
+.temp {                 /* big temperature number */
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #e94560;
+  margin: 10px 0;
+}
+
+.result p {             /* description, humidity, wind */
+  font-size: 1rem;
+  color: #a0a8cc;
+  margin: 6px 0;
+  text-transform: capitalize; /* "clear sky" → "Clear sky" */
+}
+
+/* =============================================
+   UTILITY CLASS
+   .hidden means "don't display this element"
+   JavaScript adds/removes this class
+   ============================================= */
+.hidden {
+  display: none;
+}
