@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
 
-    <!-- Link to our stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
 
-  <body>
+  <!-- Link to our stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- MAIN CARD: everything lives inside this box -->
-    <div class="card">
+<body>
 
-      <!-- APP TITLE -->
-      <h1>🌤 Weather App</h1>
+  <!-- MAIN CARD: everything lives inside this box -->
+  <div class="card">
 
-      <!-- SEARCH AREA: input + button side by side -->
-      <div class="search-box">
-        <input
-          type="text"
-          id="cityInput"
-          placeholder="Enter a city name..."
-        />
-        <button id="searchBtn">Search</button>
-      </div>
+    <!-- APP TITLE -->
+    <h1>🌤 Weather Apple</h1>
 
-      <!-- ERROR MESSAGE (hidden by default, shown if city not found) -->
-      <p id="errorMsg" class="error hidden">City not found. Try again.</p>
-
-      <!-- WEATHER RESULT (hidden by default, shown after a successful search) -->
-      <div id="weatherResult" class="result hidden">
-        <h2 id="cityName">--</h2>
-        <p id="temperature" class="temp">--°C</p>
-        <p id="description">--</p>
-        <p id="humidity">Humidity: --%</p>
-        <p id="wind">Wind: -- km/h</p>
-      </div>
-
+    <!-- SEARCH AREA: input + button side by side -->
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter a city name..." />
+      <button id="searchBtn">Search</button>
     </div>
 
-    <!-- Link to our JavaScript file — always at the BOTTOM of body -->
-    <script src="app.js"></script>
+    <!-- ERROR MESSAGE (hidden by default, shown if city not found) -->
+    <p id="errorMsg" class="error hidden">City not found. Try again.</p>
 
-  </body>
+    <!-- WEATHER RESULT (hidden by default, shown after a successful search) -->
+    <div id="weatherResult" class="result hidden">
+      <h2 id="cityName">--</h2>
+      <p id="temperature" class="temp">--°C</p>
+      <p id="description">--</p>
+      <p id="humidity">Humidity: --%</p>
+      <p id="wind">Wind: -- km/h</p>
+    </div>
+
+  </div>
+
+  <!-- Link to our JavaScript file — always at the BOTTOM of body -->
+  <script src="app.js"></script>
+
+</body>
+
 </html>
